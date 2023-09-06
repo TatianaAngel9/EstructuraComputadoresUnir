@@ -1,0 +1,16 @@
+# $s0 = n
+# $s1 = f
+# $s2 = fant
+# $s3 = i
+# $s4 = faux
+li $s0,5
+li $s2,1
+li $s1,1
+li $s3,2
+WHILE: bgt $s3,$s0,END
+move $s4,$s1
+add $s1,$s1,$s2
+move $s2,$s4
+addi $s3,$s3,1
+j WHILE
+END:
